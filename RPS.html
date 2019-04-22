@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PaperRockScissors</title>
+        <link rel="stylesheet" href="RPS.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500" rel="stylesheet">
+        <script type="text/javascript" src="RPS.js"></script>
+    </head>
+    <body>
+        <div id="container">
+             <h1>Hello human, let's play</h1>
+            <h2>Rock Paper Scissors</h2>
+        
+        <div id="Wizard_box">
+            
+             <div id="wizard_options">
+                  <div id="rock_W" class="img_cont"><img src="img/W_rock.png" height="200"/></div>
+                  <div id="paper_W" class="img_cont"><img src="img/W_paper.png" height="200"/></div>
+                  <div id="scissors_W" class="img_cont" ><img src="img/W_scissors.png" height="200"/></div>
+                 </div>
+                 <p id="showWizardOption" class="feedback"></p>
+                  <p id="wizard_player">Wizard  (aka "the computer")</p>
+                  <div id="wizard_points" class="points"></div>
+            </div>
+    
+        
+        <div id="box">
+            <div id="fancyBox">
+                <p id="display">Take your pick below, human!</p>
+                <p id="display2">Three points to win!</p>
+            </div>
+            
+            <input type="text" id="result"/>
+            <button id="startAgain" class="hiddenButton" onclick=startOver()>Start Over</button>
+        </div>
+        
+            <div id="User_box">
+                <input type="text" id="option"/>
+                <div id="human_points" class="points"></div>
+                <p id="human_player">Human  (aka YOU)</p>
+                <p id="showUserOption" class="feedback"></p>
+            
+            <div id="user_options">
+                <label for="rock_U" id="a" >
+                    <input type="radio" name="user" id="rock_U" onclick="round(this.value)" value="rock"/>
+                    <img src="img/rock.png" alt="rock hand" height="200">
+                </label>
+                <label for="paper_U"  id="b">
+                    <input type="radio" name="user" id="paper_U" onclick="round(this.value)" value="paper"/>
+                    <img src="img/paper.png" alt="paper hand" height="200">
+                </label>   
+                <label for="scissors_U"  id="c">
+                    <input type="radio" name="user" id="scissors_U" onclick="round(this.value)" value="scissors"/>
+                    <img src="img/scissors.png" alt="scissors hand" height="200">
+                </label>
+             </div>  
+
+        </div>
+    </div>    
+        
+    </body>
+</html>
